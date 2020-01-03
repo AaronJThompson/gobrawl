@@ -18,6 +18,11 @@ module.exports = {
           item.battleTime = 0;
         }
         item.id = `${item.battleTime}${item.event.id}`
+        if (item.battle.teams) {
+          item.id += item.battle.teams[0][0].tag.replace('#', '');
+        } else if (item.battle.players) {
+          item.id += item.battle.players[0].tag.replace('#', '');
+        }
         return item;
       })
       return battlelog;
