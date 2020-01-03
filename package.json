@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/AaronJThompson/gobrawl/issues"
   },
-  "homepage": "https://github.com/AaronJThompson/gobrawl#readme"
+  "homepage": "https://github.com/AaronJThompson/gobrawl#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.9.15",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^14.5.8",
+    "graphql-tools": "^4.0.6",
+    "mongoose": "^5.8.4"
+  }
 }
