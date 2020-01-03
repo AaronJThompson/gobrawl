@@ -2,6 +2,8 @@ require('dotenv').config()
 const express = require('express');
 const cors = require('cors');
 const { ApolloServer } = require('apollo-server-express');
+const typeDefs = require('./schemas');
+const resolvers = require('./resolvers');
 // const mongoose = require('mongoose');
 
 // mongoose.connect(process.env.DB_URL, {useNewUrlParser: true});
@@ -18,6 +20,9 @@ const { ApolloServer } = require('apollo-server-express');
 
 const app = express();
 app.use(cors());
+
+const server = new ApolloServer({ typeDefs, resolvers });
+server.applyMiddleware({ app, path: '/graphql' });
 
 const port = process.env.PORT || 4000;
 

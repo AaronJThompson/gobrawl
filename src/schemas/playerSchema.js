@@ -5,7 +5,7 @@ module.exports = gql`
     tag: String!
     name: String!
     trophies: Int
-    battlelog: BattleLog
+    battlelog: [BattleLog]
   }
 
   extend type Query {

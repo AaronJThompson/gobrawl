@@ -3,7 +3,7 @@ const { getBattlelog, getPlayer } = require('../data-sources/brawlstars');
 module.exports = {
   Query: {
     async player(parent, { tag }, context, info) {
-      const player = await getPlayer(args.tag);
+      const player = await getPlayer(tag);
       return player;
     }
   },
