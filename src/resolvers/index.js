@@ -1,3 +1,4 @@
+const moment = require('moment');
 const { getBattlelog, getPlayer } = require('../data-sources/brawlstars');
 
 module.exports = {
@@ -9,7 +10,15 @@ module.exports = {
   },
   Player: {
     async battlelog(player, { tag }) {
-      const battlelog = await getBattlelog(tag || player.tag);
+      let battlelog = await getBattlelog(tag || player.tag);
+      battlelog = battlelog.map(item => {
+        if (item.battleTime) {
+          item.battleTime = moment(item.battleTime).unix();
+        } else {
+          item.battleTime = 0;
+        }
+        return item;
+      })
       return battlelog;
     }
   }

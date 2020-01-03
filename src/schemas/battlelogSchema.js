@@ -2,7 +2,7 @@ const { gql } = require('apollo-server-express');
 
 module.exports = gql`
   type BattleLog {
-    battleTime: String!
+    battleTime: Int!
     event: Event!
     battle: Battle!
   }
