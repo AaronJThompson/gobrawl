@@ -15,3 +15,12 @@ db.on('error', () => {
 db.once('open', () => {
   console.log('+++Mongoose connected');
 })
+
+const app = express();
+app.use(cors());
+
+const port = process.env.PORT || 4000;
+
+app.listen(port, () => {
+  console.log(`Go to http://localhost:${port}/graphql to run queries!`);
+});
