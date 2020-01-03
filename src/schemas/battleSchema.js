@@ -9,5 +9,7 @@ module.exports = gql`
     trophyChange: Int
     starPlayer: BattlePlayer
     teams: [[BattlePlayer]]
+    rank: Int
+    players: [BattlePlayer]
   }
 `
