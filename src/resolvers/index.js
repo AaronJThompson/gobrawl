@@ -17,6 +17,7 @@ module.exports = {
         } else {
           item.battleTime = 0;
         }
+        item.id = `${item.battleTime}${item.event.id}`
         return item;
       })
       return battlelog;
