@@ -16,3 +16,22 @@ Unfortunatly due to time contraints this may take a long time, and due to how fa
 * GraphQL
 * Mongoose
 * MongoDB
+
+## Setup
+
+Install
+<br/>
+`npm install`
+<br/>
+Enviroment Variables
+<br/>
+```
+PORT = 4000
+API_TOKEN = "Brawl Stars API token"
+DB_URL = "MongoDB Database url" # Not currently in use
+```
+<br/>
+Start
+<br/>
+
+`npm start` or `node src/index.js`
