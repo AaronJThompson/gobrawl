@@ -4,6 +4,6 @@ module.exports = gql`
   type BattlePlayer {
     tag: String!
     name: String
-    brawler: BattleBrawler
+    brawler: Brawler
   }
 `

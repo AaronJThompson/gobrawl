@@ -1,7 +1,7 @@
 const playerSchema = require('./playerSchema');
 const battlelogSchema = require('./battlelogSchema');
 const battlePlayerSchema = require('./battlePlayerSchema');
-const battleBrawlerSchema = require('./battleBrawlerSchema');
+const brawlerSchema = require('./brawlerSchema');
 const eventSchema = require('./eventSchema');
 const battleSchema = require('./battleSchema');
 
@@ -21,7 +21,7 @@ module.exports = [
   playerSchema,
   battlelogSchema,
   battlePlayerSchema,
-  battleBrawlerSchema,
+  brawlerSchema,
   eventSchema,
   battleSchema
 ];

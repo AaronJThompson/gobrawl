@@ -5,7 +5,17 @@ module.exports = gql`
     tag: String!
     name: String!
     trophies: Int
+    nameColor: String
+    highestTrophies: Int
+    expLevel: Int
+    expPoints: Int
+    isQualifiedFromChampionshipChallenge: Boolean
+    soloVictories: Int
+    duoVictories: Int
+    bestRoboRumbleTime: Int
+    bestTimeAsBigBrawler: Int
     battlelog: [BattleLog]
+    brawlers: [Brawler]
   }
 
   extend type Query {
