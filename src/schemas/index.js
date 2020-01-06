@@ -1,6 +1,5 @@
 const playerSchema = require('./playerSchema');
 const battlelogSchema = require('./battlelogSchema');
-const battlePlayerSchema = require('./battlePlayerSchema');
 const brawlerSchema = require('./brawlerSchema');
 const eventSchema = require('./eventSchema');
 const battleSchema = require('./battleSchema');
@@ -20,7 +19,6 @@ module.exports = [
   linkSchema,
   playerSchema,
   battlelogSchema,
-  battlePlayerSchema,
   brawlerSchema,
   eventSchema,
   battleSchema

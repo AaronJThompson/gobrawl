@@ -16,6 +16,7 @@ module.exports = gql`
     bestTimeAsBigBrawler: Int
     battlelog: [BattleLog]
     brawlers: [Brawler]
+    brawler: Brawler
   }
 
   extend type Query {
