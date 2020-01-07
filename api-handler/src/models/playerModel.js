@@ -11,7 +11,13 @@ const playerSchema = new mongoose.Schema({
   },
   trophies: {
     type: Number
-  }
+  },
+  battlelogs: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref:'battlelog'
+    }
+  ]
 });
 
 const player = mongoose.model('player', playerSchema);
