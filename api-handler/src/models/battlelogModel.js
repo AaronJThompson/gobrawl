@@ -6,6 +6,10 @@ const battlelogSchema = new mongoose.Schema({
     required: true,
     index: true,
   },
+  time: {
+    type: Number,
+    required: true,
+  },
   eventId: {
     type: Number,
     required: true,
